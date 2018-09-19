@@ -1,0 +1,383 @@
+<!-- Full SVG for Example 11-13 -->
+<?xml version="1.0" standalone="no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1'
+     width='1080' height='350'
+> 
+  <defs>
+    <style type='text/css'><![CDATA[
+        line {
+                stroke: black;
+                stroke-width: 1;
+                }
+
+        line.axis {
+                stroke: #444;
+                stroke-width: 2;
+                }
+
+        rect {
+                fill: #777;
+                stroke: #333;
+                stroke-width: 1;
+                }
+
+        rect.gc0 { fill: rgb(80%, 80%, 80%); }
+        rect.gc1 { fill: rgb(60%, 60%, 60%); }
+        rect.gc2 { fill: rgb(40%, 40%, 40%); }
+        rect.gc3 { fill: rgb(20%, 25%, 25%) ; }
+
+        text {
+                font-family: Palatino, Georgia, Times, serif;
+                fill: black;
+                font-weight: normal;
+                font-size: 12pt;
+                font-style: normal;
+                text-rendering: optimizeLegibility;
+                }
+
+        text.title {
+                font-size: 16pt;
+                font-weight: bold;
+                text-anchor: middle;
+                dominant-baseline: middle;
+               }
+
+        text.key {
+                font-style: italic;
+               }
+
+        text.keyright {
+                font-style: italic;
+                text-anchor: end;
+               }
+
+        g.tic line {
+                stroke: #444;
+                stroke-width: 1;
+                }
+
+        g.tic text{
+                font-size: 10pt;
+                text-anchor: end;
+                dominant-baseline: middle;
+                }
+
+        g.codon text {
+                font-family:
+                             'Lucida Sans Typerwriter',
+                             'Liberation Mono',
+                             'DejaVu Sans Mono',
+                             'Bitstream Sans Mono',
+                              monospaced;
+                font-weight: bold;
+                font-size: 10pt;
+                }
+      ]]>
+    </style>
+  </defs>
+
+
+  <!-- Key -->
+    <text class='key' x='84' y='310' > 
+      Key to Genetic Code 11:
+      &#10033; start, &#8211; possible start, &#8743; stop
+    </text>
+    <text class='keyright' x='1040' y='310' > 
+      The more Gs and Cs a codon has the darker its bar. </text>
+    <text x='100' y='72' > GC content = 36.30% </text>
+
+  <!-- Title -->
+
+  <!-- I don't know why the baselines don't inherit from class title -->
+    <text class='title' x='540' y='30' > 
+      cDNA Codon Usage for
+      <tspan font-style='italic'
+             text-anchor='middle' dominant-baseline='middle' >
+      Sporosarcina pasteurii    </tspan>
+ </text>
+
+  <!-- Axes -->
+    <line class='axis' x1='80' y1='246' x2='1040' y2='246' />
+    <line class='axis' x1='80' y1='60' x2='80' y2='246' />
+  <g class='tic'>
+    <line x1='64' y1='216' x2='80' y2='216' />
+    <text x='60' y='217' > 1% </text>
+    <line x1='64' y1='186' x2='80' y2='186' />
+    <text x='60' y='187' > 2% </text>
+    <line x1='64' y1='156' x2='80' y2='156' />
+    <text x='60' y='157' > 3% </text>
+    <line x1='64' y1='126' x2='80' y2='126' />
+    <text x='60' y='127' > 4% </text>
+    <line x1='64' y1='96' x2='80' y2='96' />
+    <text x='60' y='97' > 5% </text>
+    <line x1='64' y1='66' x2='80' y2='66' />
+    <text x='60' y='67' > 6% </text>
+  </g>
+
+  <!-- Codon Labels -->
+  <g class='codon'>
+    <text x='85' y='251' transform='rotate(90,85,251)' >
+      TTT
+    </text>
+    <text x='100' y='251' transform='rotate(90,100,251)' >
+      TTC
+    </text>
+    <text x='115' y='251' transform='rotate(90,115,251)' >
+      TTA
+    </text>
+    <text x='130' y='251' transform='rotate(90,130,251)' >
+      TTG&#8211;
+    </text>
+    <text x='145' y='251' transform='rotate(90,145,251)' >
+      TCT
+    </text>
+    <text x='160' y='251' transform='rotate(90,160,251)' >
+      TCC
+    </text>
+    <text x='175' y='251' transform='rotate(90,175,251)' >
+      TCA
+    </text>
+    <text x='190' y='251' transform='rotate(90,190,251)' >
+      TCG
+    </text>
+    <text x='205' y='251' transform='rotate(90,205,251)' >
+      TAT
+    </text>
+    <text x='220' y='251' transform='rotate(90,220,251)' >
+      TAC
+    </text>
+    <text x='235' y='251' transform='rotate(90,235,251)' >
+      TAA&lt;
+    </text>
+    <text x='250' y='251' transform='rotate(90,250,251)' >
+      TAG&lt;
+    </text>
+    <text x='265' y='251' transform='rotate(90,265,251)' >
+      TGT
+    </text>
+    <text x='280' y='251' transform='rotate(90,280,251)' >
+      TGC
+    </text>
+    <text x='295' y='251' transform='rotate(90,295,251)' >
+      TGA&lt;
+    </text>
+    <text x='310' y='251' transform='rotate(90,310,251)' >
+      TGG
+    </text>
+    <text x='325' y='251' transform='rotate(90,325,251)' >
+      CTT
+    </text>
+    <text x='340' y='251' transform='rotate(90,340,251)' >
+      CTC
+    </text>
+    <text x='355' y='251' transform='rotate(90,355,251)' >
+      CTA
+    </text>
+    <text x='370' y='251' transform='rotate(90,370,251)' >
+      CTG&#8211;
+    </text>
+    <text x='385' y='251' transform='rotate(90,385,251)' >
+      CCT
+    </text>
+    <text x='400' y='251' transform='rotate(90,400,251)' >
+      CCC
+    </text>
+    <text x='415' y='251' transform='rotate(90,415,251)' >
+      CCA
+    </text>
+    <text x='430' y='251' transform='rotate(90,430,251)' >
+      CCG
+    </text>
+    <text x='445' y='251' transform='rotate(90,445,251)' >
+      CAT
+    </text>
+    <text x='460' y='251' transform='rotate(90,460,251)' >
+      CAC
+    </text>
+    <text x='475' y='251' transform='rotate(90,475,251)' >
+      CAA
+    </text>
+    <text x='490' y='251' transform='rotate(90,490,251)' >
+      CAG
+    </text>
+    <text x='505' y='251' transform='rotate(90,505,251)' >
+      CGT
+    </text>
+    <text x='520' y='251' transform='rotate(90,520,251)' >
+      CGC
+    </text>
+    <text x='535' y='251' transform='rotate(90,535,251)' >
+      CGA
+    </text>
+    <text x='550' y='251' transform='rotate(90,550,251)' >
+      CGG
+    </text>
+    <text x='565' y='251' transform='rotate(90,565,251)' >
+      ATT&#8211;
+    </text>
+    <text x='580' y='251' transform='rotate(90,580,251)' >
+      ATC&#8211;
+    </text>
+    <text x='595' y='251' transform='rotate(90,595,251)' >
+      ATA&#8211;
+    </text>
+    <text x='610' y='251' transform='rotate(90,610,251)' >
+      ATG&#10033;
+    </text>
+    <text x='625' y='251' transform='rotate(90,625,251)' >
+      ACT
+    </text>
+    <text x='640' y='251' transform='rotate(90,640,251)' >
+      ACC
+    </text>
+    <text x='655' y='251' transform='rotate(90,655,251)' >
+      ACA
+    </text>
+    <text x='670' y='251' transform='rotate(90,670,251)' >
+      ACG
+    </text>
+    <text x='685' y='251' transform='rotate(90,685,251)' >
+      AAT
+    </text>
+    <text x='700' y='251' transform='rotate(90,700,251)' >
+      AAC
+    </text>
+    <text x='715' y='251' transform='rotate(90,715,251)' >
+      AAA
+    </text>
+    <text x='730' y='251' transform='rotate(90,730,251)' >
+      AAG
+    </text>
+    <text x='745' y='251' transform='rotate(90,745,251)' >
+      AGT
+    </text>
+    <text x='760' y='251' transform='rotate(90,760,251)' >
+      AGC
+    </text>
+    <text x='775' y='251' transform='rotate(90,775,251)' >
+      AGA
+    </text>
+    <text x='790' y='251' transform='rotate(90,790,251)' >
+      AGG
+    </text>
+    <text x='805' y='251' transform='rotate(90,805,251)' >
+      GTT
+    </text>
+    <text x='820' y='251' transform='rotate(90,820,251)' >
+      GTC
+    </text>
+    <text x='835' y='251' transform='rotate(90,835,251)' >
+      GTA
+    </text>
+    <text x='850' y='251' transform='rotate(90,850,251)' >
+      GTG&#8211;
+    </text>
+    <text x='865' y='251' transform='rotate(90,865,251)' >
+      GCT
+    </text>
+    <text x='880' y='251' transform='rotate(90,880,251)' >
+      GCC
+    </text>
+    <text x='895' y='251' transform='rotate(90,895,251)' >
+      GCA
+    </text>
+    <text x='910' y='251' transform='rotate(90,910,251)' >
+      GCG
+    </text>
+    <text x='925' y='251' transform='rotate(90,925,251)' >
+      GAT
+    </text>
+    <text x='940' y='251' transform='rotate(90,940,251)' >
+      GAC
+    </text>
+    <text x='955' y='251' transform='rotate(90,955,251)' >
+      GAA
+    </text>
+    <text x='970' y='251' transform='rotate(90,970,251)' >
+      GAG
+    </text>
+    <text x='985' y='251' transform='rotate(90,985,251)' >
+      GGT
+    </text>
+    <text x='1000' y='251' transform='rotate(90,1000,251)' >
+      GGC
+    </text>
+    <text x='1015' y='251' transform='rotate(90,1015,251)' >
+      GGA
+    </text>
+    <text x='1030' y='251' transform='rotate(90,1030,251)' >
+      GGG
+    </text>
+  </g>
+
+  <!-- Bars -->
+    <rect class='gc0' x='85' y='162' width='10' height='84' />
+    <rect class='gc1' x='100' y='195' width='10' height='51' />
+    <rect class='gc0' x='115' y='171' width='10' height='75' />
+    <rect class='gc1' x='130' y='189' width='10' height='57' />
+    <rect class='gc1' x='145' y='210' width='10' height='36' />
+    <rect class='gc2' x='160' y='231' width='10' height='15' />
+    <rect class='gc1' x='175' y='186' width='10' height='60' />
+    <rect class='gc2' x='190' y='228' width='10' height='18' />
+    <rect class='gc0' x='205' y='168' width='10' height='78' />
+    <rect class='gc1' x='220' y='222' width='10' height='24' />
+    <rect class='gc0' x='235' y='234' width='10' height='12' />
+    <rect class='gc1' x='250' y='246' width='10' height='0' />
+    <rect class='gc1' x='265' y='225' width='10' height='21' />
+    <rect class='gc2' x='280' y='240' width='10' height='6' />
+    <rect class='gc1' x='295' y='243' width='10' height='3' />
+    <rect class='gc2' x='310' y='207' width='10' height='39' />
+    <rect class='gc1' x='325' y='180' width='10' height='66' />
+    <rect class='gc2' x='340' y='231' width='10' height='15' />
+    <rect class='gc1' x='355' y='204' width='10' height='42' />
+    <rect class='gc2' x='370' y='222' width='10' height='24' />
+    <rect class='gc2' x='385' y='222' width='10' height='24' />
+    <rect class='gc3' x='400' y='237' width='10' height='9' />
+    <rect class='gc2' x='415' y='195' width='10' height='51' />
+    <rect class='gc3' x='430' y='225' width='10' height='21' />
+    <rect class='gc1' x='445' y='210' width='10' height='36' />
+    <rect class='gc2' x='460' y='228' width='10' height='18' />
+    <rect class='gc1' x='475' y='177' width='10' height='69' />
+    <rect class='gc2' x='490' y='222' width='10' height='24' />
+    <rect class='gc2' x='505' y='198' width='10' height='48' />
+    <rect class='gc3' x='520' y='237' width='10' height='9' />
+    <rect class='gc2' x='535' y='228' width='10' height='18' />
+    <rect class='gc3' x='550' y='237' width='10' height='9' />
+    <rect class='gc0' x='565' y='99' width='10' height='147' />
+    <rect class='gc1' x='580' y='159' width='10' height='87' />
+    <rect class='gc0' x='595' y='222' width='10' height='24' />
+    <rect class='gc1' x='610' y='156' width='10' height='90' />
+    <rect class='gc1' x='625' y='204' width='10' height='42' />
+    <rect class='gc2' x='640' y='228' width='10' height='18' />
+    <rect class='gc1' x='655' y='168' width='10' height='78' />
+    <rect class='gc2' x='670' y='186' width='10' height='60' />
+    <rect class='gc0' x='685' y='168' width='10' height='78' />
+    <rect class='gc1' x='700' y='195' width='10' height='51' />
+    <rect class='gc0' x='715' y='120' width='10' height='126' />
+    <rect class='gc1' x='730' y='204' width='10' height='42' />
+    <rect class='gc1' x='745' y='213' width='10' height='33' />
+    <rect class='gc2' x='760' y='219' width='10' height='27' />
+    <rect class='gc1' x='775' y='219' width='10' height='27' />
+    <rect class='gc2' x='790' y='237' width='10' height='9' />
+    <rect class='gc1' x='805' y='171' width='10' height='75' />
+    <rect class='gc2' x='820' y='210' width='10' height='36' />
+    <rect class='gc1' x='835' y='201' width='10' height='45' />
+    <rect class='gc2' x='850' y='222' width='10' height='24' />
+    <rect class='gc2' x='865' y='201' width='10' height='45' />
+    <rect class='gc3' x='880' y='222' width='10' height='24' />
+    <rect class='gc2' x='895' y='168' width='10' height='78' />
+    <rect class='gc3' x='910' y='204' width='10' height='42' />
+    <rect class='gc1' x='925' y='138' width='10' height='108' />
+    <rect class='gc2' x='940' y='192' width='10' height='54' />
+    <rect class='gc1' x='955' y='69' width='10' height='177' />
+    <rect class='gc2' x='970' y='198' width='10' height='48' />
+    <rect class='gc2' x='985' y='159' width='10' height='87' />
+    <rect class='gc3' x='1000' y='195' width='10' height='51' />
+    <rect class='gc2' x='1015' y='174' width='10' height='72' />
+    <rect class='gc3' x='1030' y='213' width='10' height='33' />
+
+</svg>

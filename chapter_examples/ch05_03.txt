@@ -1,0 +1,24 @@
+### Example 5-3: Using an instance field to share state
+
+# Outline of a parser class for GenBank files.
+
+# The definition of read_next_line is omitted; it is called from
+# 10 places in the actual code that implements this outline
+
+# parse
+#     get_ids
+#         is_at_version
+#     make_feature_generator
+#         skip_intro
+#             is_at_features
+#         is_at_sequence_start
+#         read_feature
+#         read_qualifiers
+#             is_at_feature_start
+#             read_qualifier_value
+#                 is_at_attribute_start
+#                 is_at_feature_start
+#         GenBankFeature
+#     get_sequence
+#         is_at_sequence_end
+#     GenBankEntry

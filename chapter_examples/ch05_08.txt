@@ -1,0 +1,12 @@
+### Example 5-8: Referencing a subclass class value
+
+# DNASequence('ATTCTGGC')
+#     -->  DNASequence.__init__('ATTCTGGC')
+#          --> BaseSequence.__init__('ATTCTGGC')
+#              --> BaseSequence.isinvalid('ATTCTGGC')
+#                     which references self.ValidChars
+#                          1. does self have a ValidChars field? no
+#                          2. does self's class have a ValidChars field? yes
+#                          [3. if it did not, the superclass of self's class 
+#                               would be examined for a ValidChars field]
+

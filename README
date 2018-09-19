@@ -1,0 +1,19 @@
+2010-04-18
+
+This directory contains the code examples extracted from my book
+Bioinformatics Programming Using Python, published by O'Reilly Media,
+2010. Examples from the book that do not define functions are omitted
+from these files, as are brief definitions shown inline with the text.
+
+I will be adding more material to this web site in the coming months.  There
+may also be unit tests for some of the code examples that go beyond the simple
+demonstrations  in the "main" part of most of these files.  In addition, I plan
+to add exercises and perhaps eventually some more extensive examples than those
+in the book.
+
+Errata for the book are found at
+http://oreilly.com/catalog/errata.csp?isbn=9780596154516.
+Please add any other errors you find.
+
+    --- Mitchell L Model
+
